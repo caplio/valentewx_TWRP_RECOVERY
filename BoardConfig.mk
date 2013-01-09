@@ -52,41 +52,6 @@ TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/valentewx/prebuilt/kernel
 TARGET_KERNEL_CONFIG := htcj_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 
-# QCOM GPS
-#BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
-#BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := valentewx
-
-# Lights
-TARGET_PROVIDES_LIBLIGHTS := true
-
-# RIL
-BOARD_PROVIDES_LIBRIL := true
-
-# Wifi
-WIFI_DRIVER_MODULE_NAME          := prima_wlan
-WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/prima_wlan.ko"
-
-# cat /proc/emmc
-#dev:        size     erasesize name
-#mmcblk0p23: 000ffa00 00000200 "misc"
-#mmcblk0p22: 00fffe00 00000200 "recovery"
-#mmcblk0p21: 01000000 00000200 "boot"
-#mmcblk0p33: 67fffc00 00000200 "system"
-#mmcblk0p30: 00140200 00000200 "local"
-#mmcblk0p34: 0ffffe00 00000200 "cache"
-#mmcblk0p35: 97fffe00 00000200 "userdata"
-#mmcblk0p26: 01400000 00000200 "devlog"
-#mmcblk0p28: 00040000 00000200 "pdata"
-#mmcblk0p36: 27be00000 00000200 "fat"
-#mmcblk0p31: 00010000 00000200 "extra"
-#mmcblk0p17: 02d00000 00000200 "radio"
-#mmcblk0p18: 00a00000 00000200 "adsp"
-#mmcblk0p16: 00100000 00000200 "dsps"
-#mmcblk0p19: 00500000 00000200 "wcnss"
-#mmcblk0p20: 007ffa00 00000200 "radio_config"
-#mmcblk0p24: 00400000 00000200 "modem_st1"
-#mmcblk0p25: 00400000 00000200 "modem_st2"
-
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
